@@ -50,10 +50,10 @@ Os gráficos a seguir ilustram os principais resultados:
 
 ### Crescimento Assintótico
 
-![Gráfico Comparativo](report/comparacao_algoritmos.png)
+![Gráfico Comparativo](comparacao_algoritmos.png)
 
 ### Visualização Interativa
 
-![Evolução dos Tempos](report/evolucao_tempos.gif)
+![Evolução dos Tempos](evolucao_tempos.gif)
 
 O GIF demonstra a evolução dos tempos de execução à medida que o tamanho da entrada aumenta.
