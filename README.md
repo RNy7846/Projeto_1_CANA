@@ -6,20 +6,32 @@ Este repositório contém a implementação, análise e documentação comparati
 
 ## 📋 Descrição
 
-A multiplicação de inteiros grandes é uma operação fundamental em diversas áreas da ciência da computação. Neste projeto, comparamos duas abordagens principais:
+A multiplicação de inteiros grandes é uma operação fundamental em diversas áreas da ciência da computação, como em criptografia, álgebra computacional e análise numérica. Quando lidamos com números de grande tamanho, a eficiência dos algoritmos de multiplicação se torna crucial para o desempenho de sistemas que dependem de operações matemáticas em larga escala.
 
-1. **Multiplicação Ingênua**: Abordagem direta com complexidade temporal de $O(n^2)$.
-2. **Algoritmo de Karatsuba**: Método baseado em divisão e conquista, reduzindo a complexidade para $O(n^{\log_2 3})$.
+Neste projeto, comparamos duas abordagens principais para a multiplicação de inteiros grandes:
 
-As implementações foram realizadas em Python, com suporte a números de precisão arbitrária, e avaliadas quanto ao desempenho para diferentes tamanhos de entrada.
+1. **Multiplicação Ingênua**: 
+   - A abordagem ingênua realiza a multiplicação de dois números grandes, representados como vetores de dígitos, de forma direta. O algoritmo percorre todos os pares de elementos dos vetores e soma os produtos parciais. 
+   - **Complexidade Temporal**: $O(n^2)$. Embora simples de implementar, sua eficiência diminui rapidamente à medida que o tamanho dos números aumenta.
+
+2. **Algoritmo de Karatsuba**: 
+   - O algoritmo de Karatsuba utiliza uma técnica de divisão e conquista para reduzir o número de multiplicações necessárias. O número grande é dividido em duas metades e, em vez de realizar multiplicações diretas, combina resultados parciais de forma inteligente, o que reduz a complexidade.
+   - **Complexidade Temporal**: $O(n^{\log_2 3})$, o que oferece uma melhoria significativa em relação à abordagem ingênua, especialmente para números grandes.
+
+As implementações dos dois algoritmos foram realizadas em Python, utilizando listas para representar os números de precisão arbitrária. Para garantir uma comparação justa, ambos os algoritmos foram avaliados com o mesmo conjunto de entradas aleatórias de diferentes tamanhos. 
+
+A performance de ambos os algoritmos foi analisada em termos de tempo de execução para uma série de tamanhos de entrada, variando de números pequenos a muito grandes. Os resultados foram visualizados por meio de gráficos comparativos, com destaque para o comportamento assintótico das duas abordagens. 
+
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Python 3.10+**: Linguagem de programação utilizada para implementar os algoritmos.
-- **Matplotlib**: Biblioteca usada para gerar os gráficos comparativos.
+- **Python 3.9**: Linguagem de programação utilizada para implementar os algoritmos de multiplicação e gerar os gráficos.
+- **Matplotlib**: Biblioteca usada para criar os gráficos comparativos e a animação dos tempos de execução.
+- **NumPy**: Biblioteca utilizada para operações numéricas e manipulação de vetores.
 - **LaTeX**: Ferramenta utilizada para a elaboração do relatório técnico.
+- **ImagemMagick**: Utilizado para gerar o GIF animado da evolução dos tempos de execução.
 
 ---
 
